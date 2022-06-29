@@ -2,12 +2,12 @@ package examen3.ej3;
 
 public class Estudiante {
     private String name;
-    private int codigo;
+    private int ci;
     private String requisitos;
 
     public Estudiante(String name, int codigo, String requisitos) {
         this.name = name;
-        this.codigo = codigo;
+        this.ci = codigo;
         this.requisitos = requisitos;
     }
 
@@ -19,12 +19,12 @@ public class Estudiante {
         this.name = name;
     }
 
-    public int getCodigo() {
-        return codigo;
+    public int getCi() {
+        return ci;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    public void setCi(int ci) {
+        this.ci = ci;
     }
 
     public String getRequisitos() {

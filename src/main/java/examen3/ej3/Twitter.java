@@ -4,20 +4,20 @@ import java.util.List;
 
 public class Twitter implements IRedSocial{
 
-    private Institucion tipoInstitucion;
+    private Institucion institucion;
 
     public Twitter(Institucion tipoInstitucion) {
-        this.tipoInstitucion = tipoInstitucion;
+        this.institucion = tipoInstitucion;
     }
 
     @Override
-    public void controlar(Institucion institucion, List<Estudiante> estudiantes) {
+    public void controlar(List<Estudiante> estudiantes) {
         System.out.println("Controlando desde Twitter");
         institucion.inscribir(estudiantes);
     }
 
     @Override
     public void showInfo() {
-        tipoInstitucion.showInfo();
+        institucion.showInfo();
     }
 }

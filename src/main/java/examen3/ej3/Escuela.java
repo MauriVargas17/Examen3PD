@@ -18,7 +18,7 @@ public class Escuela extends Institucion{
         System.out.println("Inscribiendo en escuela");
         for (Estudiante e : estudiantes){
             if (e.getRequisitos().equals(getRequisitos())){
-                estudiantes.add(e);
+                this.getEstudiantes().add(e);
             }
         }
 
